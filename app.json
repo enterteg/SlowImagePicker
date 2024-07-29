@@ -12,7 +12,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dawid.jagiela.SlowImagePicker"
     },
     "android": {
       "adaptiveIcon": {
@@ -22,6 +23,14 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app needs to accesses your photos to work"
+        }
+      ]
+    ]
   }
 }
